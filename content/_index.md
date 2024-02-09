@@ -42,14 +42,6 @@ sections:
       title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-  - block: skills
-    content:
-      title: Skills
-      text: ''
-      # Choose a user to display skills from (a folder name within `content/authors/`)
-      username: admin
-    design:
-      columns: '1'
   - block: experience
     content:
       title: Experience
@@ -62,98 +54,140 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
-          company_url: ''
-          company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
-          date_end: ''
+        - title: ML researcher
+          company: KAIST
+          company_url: 'https://osi.kaist.ac.kr/'
+          location: Seoul, South-Korea.
+          date_start: '2023-05-08'
+          date_end: '2023-11-02'
           description: |2-
-              Responsibilities include:
-
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
-    design:
-      columns: '2'
-  - block: accomplishments
-    content:
-      # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-      title: 'Accomplish&shy;ments'
-      subtitle:
-      # Date format: https://docs.hugoblox.com/customization/#date-format
-      date_format: Jan 2006
-      # Accomplishments.
-      #   Add/remove as many `item` blocks below as you like.
-      #   `title`, `organization`, and `date_start` are the required parameters.
-      #   Leave other parameters empty if not required.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-      items:
-        - certificate_url: https://www.coursera.org
+            Conducted in-depth research in AI/ML, specializing in low-rank MDPs, with a focus on improving sample complexity.
+            Developed and implemented experiments in a synthetic MDP environment, demonstrating proficiency in experimental design and execution.
+            Published a paper at the Korean Scientific Conference (KSC) as joint first author On The Estimation of Softmax Probability Distribution.
+        - title: Undergraduate Teaching Assistant
+          company: University of Sherbrooke
+          company_url: 'www.usherbrooke.ca'
+          location: Sherbrooke, Canada.
+          date_start: '2022-01-05'
           date_end: ''
-          date_start: '2021-01-25'
-          description: ''
-          icon: coursera
-          organization: Coursera
-          organization_url: https://www.coursera.org
-          title: Neural Networks and Deep Learning
-          url: ''
-        - certificate_url: https://www.edx.org
-          date_end: ''
-          date_start: '2021-01-01'
-          description: Formulated informed blockchain models, hypotheses, and use cases.
-          icon: edx
-          organization: edX
-          organization_url: https://www.edx.org
-          title: Blockchain Fundamentals
-          url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-        - certificate_url: https://www.datacamp.com
-          date_end: '2020-12-21'
-          date_start: '2020-07-01'
-          description: ''
-          icon: datacamp
-          organization: DataCamp
-          organization_url: https://www.datacamp.com
-          title: 'Object-Oriented Programming in R'
-          url: ''
+          description: I work as the teaching assistant for undergraduate courses including data structures (C++), database management (PostgreSQL and MongoDB), and object-oriented programming (Java).
+        - title: Data Scientist
+          company: Intact FC
+          company_url: 'https://www.intactfc.com/'
+          location: Montreal, Canada.
+          date_start: '2022-09-01'
+          date_end: '2023-04-28'
+          description: |2-
+            I worked with the data science team on adapting a classification model (Catboost) to detect fraudulent claims.
+            I extracted 3 years of daily data (~300 million records of car ads), pre-processed it, and loaded it to Snowflake using AirFlow, PySprak, Snowflake, Pandas, and Numpy.
+            I built a history of ads per vehicle to enhance the storytelling in the reports.
+        - title: Backend AI Engineer
+          company: Intact FC
+          company_url: 'https://www.intactfc.com/'
+          location: Montreal, Canada.
+          date_start: '2022-01-05'
+          date_end: '2022-05-05'
+          description: |2-
+            I worked with the AI engineering team on the backend of the driving application for usage-based insurance.
+            I implemented a project, as an ETL, to generate synthetic data from the prod environment and write it to Snowflake in dev environment using synthetic data vault, GANs and Gaussian Copula.
+            I contributed and maintained mainly the data pipelines to do transformations and featurizations for the actuarial and datascience teams.
+        - title: AI Engineer
+          company: Cellule d'expertise en robotique et IA
+          company_url: 'https://cellule.ai/'
+          location: Trois-Rivieres, Canada.
+          date_start: '2020-05-21'
+          date_end: '2020-08-25'
+          description: |2-
+            I worked on a chatbot designed for Baseball Quebec using AWS (Lex, Lambda, DybamoDB, S3, Amplify) and machine learning (NLP and fuzzy logic).
+            I received a MITACS scholarship in association with the developed project.
+        - title: Web Developer
+          company: Groupe Shift
+          company_url: 'https://groupeshift.ca/en/'
+          location: Becancour, Canada.
+          date_start: '2020-09-27'
+          date_end: '2021-03-25'
+          description:
+            I contributed principally to backend features for industry 4.0 management applications (ERP) in C#, ASP.net, and JavaScript.
+        - title: AI Engineer
+          company: Cellule d'expertise en robotique et IA
+          company_url: 'https://cellule.ai/'
+          location: Trois-Rivieres, Canada.
+          date_start: '2020-05-21'
+          date_end: '2020-08-25'
+          description: |2-
+            I worked on a project to detect and classify vehicles using pre-trained CNN models (ResNet-18, AlexNet, and GoogLeNet).
+            I implemented the project on an Nvidia Jetson Nano to collect data about traffic to automate road lights.
     design:
       columns: '2'
-  - block: collection
-    id: posts
-    content:
-      title: Recent Posts
-      subtitle: ''
-      text: ''
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 5
-      # Filter on criteria
-      filters:
-        folders:
-          - post
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: compact
-      columns: '2'
+#  - block: accomplishments
+#    content:
+#      # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
+#      title: 'Accomplish&shy;ments'
+#      subtitle:
+#      # Date format: https://docs.hugoblox.com/customization/#date-format
+#      date_format: Jan 2006
+#      # Accomplishments.
+#      #   Add/remove as many `item` blocks below as you like.
+#      #   `title`, `organization`, and `date_start` are the required parameters.
+#      #   Leave other parameters empty if not required.
+#      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+#      items:
+#        - certificate_url: https://www.coursera.org
+#          date_end: ''
+#          date_start: '2021-01-25'
+#          description: ''
+#          icon: coursera
+#          organization: Coursera
+#          organization_url: https://www.coursera.org
+#          title: Neural Networks and Deep Learning
+#          url: ''
+#        - certificate_url: https://www.edx.org
+#          date_end: ''
+#          date_start: '2021-01-01'
+#          description: Formulated informed blockchain models, hypotheses, and use cases.
+#          icon: edx
+#          organization: edX
+#          organization_url: https://www.edx.org
+#          title: Blockchain Fundamentals
+#          url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
+#        - certificate_url: https://www.datacamp.com
+#          date_end: '2020-12-21'
+#          date_start: '2020-07-01'
+#          description: ''
+#          icon: datacamp
+#          organization: DataCamp
+#          organization_url: https://www.datacamp.com
+#          title: 'Object-Oriented Programming in R'
+#          url: ''
+#    design:
+#      columns: '2'
+#  - block: collection
+#    id: posts
+#    content:
+#      title: Recent Posts
+#      subtitle: ''
+#      text: ''
+#      # Choose how many pages you would like to display (0 = all pages)
+#      count: 5
+#      # Filter on criteria
+#      filters:
+#        folders:
+#          - post
+#        author: ""
+#        category: ""
+#        tag: ""
+#        exclude_featured: false
+#        exclude_future: false
+#        exclude_past: false
+#        publication_type: ""
+#      # Choose how many pages you would like to offset by
+#      offset: 0
+#      # Page order: descending (desc) or ascending (asc) date.
+#      order: desc
+#    design:
+#      # Choose a layout view
+#      view: compact
+#      columns: '2'
   - block: portfolio
     id: projects
     content:
@@ -181,25 +215,6 @@ sections:
       view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
-  - block: markdown
-    content:
-      title: Gallery
-      subtitle: ''
-      text: |-
-        {{< gallery album="demo" >}}
-    design:
-      columns: '1'
-  - block: collection
-    id: featured
-    content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publication
-        featured_only: true
-    design:
-      columns: '2'
-      view: card
   - block: collection
     content:
       title: Recent Publications
@@ -214,16 +229,6 @@ sections:
     design:
       columns: '2'
       view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - event
-    design:
-      columns: '2'
-      view: compact
   - block: tag_cloud
     content:
       title: Popular Topics
@@ -233,51 +238,5 @@ sections:
     id: contact
     content:
       title: Contact
-      subtitle:
-      text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
-      # Contact (add or remove contact options as necessary)
-      email: test@example.org
-      phone: 888 888 88 88
-      appointment_url: 'https://calendly.com'
-      address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
-      # Choose a map provider in `params.yaml` to show a map from these coordinates
-      coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'  
-      contact_links:
-        - icon: twitter
-          icon_pack: fab
-          name: DM Me
-          link: 'https://twitter.com/Twitter'
-        - icon: skype
-          icon_pack: fab
-          name: Skype Me
-          link: 'skype:echo123?call'
-        - icon: video
-          icon_pack: fas
-          name: Zoom Me
-          link: 'https://zoom.com'
-      # Automatically link email and phone or display as text?
-      autolink: true
-      # Email form provider
-      form:
-        provider: netlify
-        formspree:
-          id:
-        netlify:
-          # Enable CAPTCHA challenge to reduce spam?
-          captcha: false
-    design:
-      columns: '2'
+      email: mohammed.benabbassi@usherbrooke.ca
 ---
